@@ -1,0 +1,69 @@
+
+
+
+@import './base.css';
+
+.header{
+    position:sticky;
+    top:0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header .logo img{
+    width:30px;
+}
+
+.header .logo a {
+    color:var(--mainColor);
+}
+.header .nav a {
+    color: black;
+
+}
+.header .auth a {
+font-family:var(--subFont);
+padding:10px 30px;
+border-radius: 10px;
+
+}
+
+.header .auth a:first-of-type {
+    border:1px solid var(--mainColor);
+    color:var(--mainColor);
+   margin-right: 10px;
+
+  
+}
+
+
+.header .auth a:last-of-type {
+    background-color:var(--mainColor);
+    color:#fff ;
+}
+
+.nav ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.active{
+    font-weight: 900;
+}
+
+@media (max-width:992px){
+    body{
+        .nav{
+            display: none;
+        }
+    }
+
+}
